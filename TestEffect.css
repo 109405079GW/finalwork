@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 section{
     height: 100vh;
@@ -12,6 +14,7 @@ section{
     scroll-snap-align: start;
     flex-direction: row-reverse;
     margin: 340px;
+    text-shadow: 0.1em 0.1em #ffffff
 }
 .container{
     scroll-snap-type: y mandatory;
@@ -19,33 +22,16 @@ section{
     height: 100vh;
 }
 
-.one{
-    /*background-color: #0707074d;*/    
-    /*background-image: url("world-trade-center.jpg.webp");*/
-}
-.two{
-    /*background-color: #0707074d;*/
-}
-.three{
-    /*background-color: #0707074d;*/
-}
-.four{
-    /*background-color: #0707074d;*/
-}
-.five{
-    /*background-color: #0707074d;*/
-}
-.six{
-    /*background-color: #0707074d;*/
-}
-.seven{
-    /*background-color: #0707074d;*/
-}
 p{
     font-family: cwTeXYen;
     font-size: 60px;
     color: rgb(0, 0, 0)
     
+}
+h1{
+    font-family: cwTeXYen;
+    font-size: 100px;
+    color: rbg(0,0,0)
 }
 .bg{
     position: fixed;
@@ -309,15 +295,37 @@ body{
   }
   50% {
      width:30px;
-    opacity:1;
+     opacity:1;
   }
   100% {
      bottom:50px;
      right:50px;
      width:8px;
-    opacity:0;
+     opacity:0;
   }
 }
-
+.section_bar{
+  height: 10vh;
+  left:50%;
+  background-color: #bdcdbf;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h3{
+  top: 50%;
+  left: 50%;
+  font-family: cwTeXYen;
+  font-size: 40px;
+  display: table-cell;
+  vertical-align: middle;
   
+}
+.img_box{
+  display: table-cell;
+  vertical-align: middle;
+}
+
   
