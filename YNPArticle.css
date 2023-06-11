@@ -1,123 +1,73 @@
 @import url("https://fonts.googleapis.com/earlyaccess/cwtexyen.css ");
-body {
+  body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .nav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111111d8;
-    opacity: 0.9;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.7s;
-  }
-  
-  .nav a {
-    display: block;
-    padding: 20px 30px;
-    text-decoration: none;
-    color: #ccc;
-    font-size: 25px;
-  }
-  .nav a:hover {
-    color: #fff;
-    transition: 0.4s;
-  }
-  
-  .nav .close {
-    position: absolute;
-    top: 0;
-    right: 22px;
-    margin-left: 50px;
-    font-size: 30px;
-  }
-  
-  .slide a {
-    color: #8b0dd4;
-    font-size: 36px;
-  }
-  
-  #content {
-    padding: 20px;
-    transition: margin-left 0.7s;
+    height: 2000px;
+    /*box-sizing: border-box;*/
     overflow: hidden;
   }
   
-  #main {
-    width: 100%;
-    /*background-image: url("黃石國家公園.jpg");*/
-    background-color: aqua;
-    height: 7vh;
-    background-position: center;
-    background-size: cover;
-    margin-bottom: 10px;
+  
+  .section_bar{
+    height: 100px;
+    left:50%;
+    background-color: #bdcdbf;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h3{
+    top: 50%;
+    left: 50%;
+    font-family: cwTeXYen;
+    font-size: 40px;
+    display: table-cell;
+    vertical-align: middle;
   }
   
-  p {
+  .text_box{
+    top: 100px;
+    height: 1800px;
+    padding: 0px 600px 0px 600px;
+    overflow: auto;
+    overflow-x: hidden;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+ 
+  .title_box{
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  
+  .text_box h1{
     width: 100%;
-    padding: 5%;
+    padding: 2%;
     font-family: cwTeXYen;
     font-size: 40px;
     color: rgb(0, 0, 0)
   }
-  section{
-    height: 45vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*scroll-snap-align: start;*/
-    flex-direction: row-reverse;
-}
+  .text_box p{
+      margin: 10px;
+      width: 100%;
+      padding: 5%;
+      font-family: cwTeXYen;
+      font-size: 30px; 
+  }
+  .text_box img{
+    position: relative;
 
-.one{
-    background-color: #0707074d;    
-    /*background-image: url("world-trade-center.jpg.webp");*/
-}
-.two{
-    background-color: #0707074d;
-}
-.three{
-    background-color: #0707074d;
-}
-.four{
-    background-color: #0707074d;
-}
-.five{
-    background-color: #0707074d;
-}
-.six{
-    background-color: #0707074d;
-}
-.seven{
-    background-color: #0707074d;
-}
-.section_bar{
-  height: 10vh;
-  left:50%;
-  background-color: #bdcdbf;
-  position: sticky;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-h3{
-  top: 50%;
-  left: 50%;
-  font-family: cwTeXYen;
-  font-size: 40px;
-  display: table-cell;
-  vertical-align: middle;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+    height: 300px;
+    width: 450px;
+  }
   
-}
-.img_box{
-  display: table-cell;
-  vertical-align: middle;
-}
